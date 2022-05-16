@@ -1,0 +1,23 @@
+.rightbarContainer{
+    flex: 1;
+    position: sticky;
+    height: calc(100vh - 100px);
+    top: 60px;
+    right: 0;
+
+    @media screen and (max-width:768px){
+        display: none;
+        flex: 0;
+    }
+
+    .rightbarWrapper{
+        width: 100%;
+        iframe{
+            width: 95%;
+            position: absolute;
+            border-radius: 33px;
+            padding: 10px 5px;
+        }
+    }
+
+}

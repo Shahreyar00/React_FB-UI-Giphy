@@ -1,0 +1,94 @@
+.sidebarContainer{
+    flex: 1;
+    position: sticky;
+    height: calc(100vh - 100px);
+    top: 60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width:768px){
+        flex: 0.5;
+    }
+
+    .sidebarWrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+        padding-top: 20px;
+
+        .sidebarInfo{
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #eff2f5;
+            border-radius: 10px;
+            gap: 10px;
+            cursor: pointer;
+
+            @media screen and (max-width:768px){
+                padding: 10px 0px;
+            }
+
+            img{
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .userName{
+                font-size: 16px;
+                word-wrap: wrap;
+                font-weight: 600;
+
+                @media screen and (max-width:768px){
+                    display: none;
+                }
+            }
+        }
+
+        .sidebarOption{
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #eff2f5;
+            margin: 0px 10px;
+            border-radius: 10px;
+            gap: 10px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: lightblue;
+                border-radius: 10px;
+            }
+
+            @media screen and (max-width:768px){
+                padding: 10px 5px;
+                margin: 0px 0px;
+            }
+
+            .sideLog{
+                width: 25px;
+                height: 25px;
+                color: #2e81f4;
+            }
+
+            .sideTitle{
+                font-size: 16px;
+                word-wrap: wrap;
+                font-weight: 600;
+
+                @media screen and (max-width:768px){
+                    display: none;
+                }
+            }
+        }
+
+        button{
+            border: none;
+            outline: none;
+        }
+    }
+}

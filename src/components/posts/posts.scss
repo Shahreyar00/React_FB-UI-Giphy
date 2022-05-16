@@ -1,0 +1,105 @@
+.postsContainer{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    
+
+    .postCard{
+        width: 100%;
+        border-radius: 10px;
+        background-color: white;
+        padding: 0px 10px;
+        
+        .postCardWrapper{
+            padding: 10px 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+
+            .postCardTop{
+                display: flex;
+                gap: 10px;
+
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .postCardInfo{
+                    display: flex;
+                    flex-direction: column;
+
+                    .cardName{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .cardTimestamp{
+                        color: gray;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .postCardMiddle{
+                font-size: 16px;
+                letter-spacing: 1.1px;
+                padding: 0px 5px;
+            }
+
+            .postCardBottom{
+                padding: 10px 5px;
+                
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+
+            .postCardFooter{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 10px;
+
+                .footerInteract{
+                    display: flex;
+                    gap: 15px;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+
+                button{
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                    font-size: 18px;
+                    background-color: #2e81f4;
+                    border-radius: 33px;
+                    opacity: 0.8;
+                    transition: all 0.3s ease;
+
+                    &:hover{
+                        opacity: 1;
+                        transform: scale(1.07);
+                    }
+                }
+            }
+        }
+    }
+}
+

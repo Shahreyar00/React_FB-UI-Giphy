@@ -1,0 +1,7 @@
+.feedContainer{
+    flex: 3;
+    
+    @media screen and (max-width:768px){
+        flex: 4;
+    }
+}
